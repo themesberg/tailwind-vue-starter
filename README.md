@@ -1,6 +1,8 @@
-# Tailwind CSS + Vue 3 + Flowbite Starter
+# Tailwind CSS + Vue 3 + Flowbite Starter (Vite)
 
-Get started with this starter project based on a Tailwind CSS, Vue 3 and Flowbite configuration to help you get started building website applications based on the utility classes from Tailwind CSS and components from Flowbite. This repository is bnased on the [Tailwind CSS + Vue](https://flowbite.com/docs/getting-started/vue/) guide on the Flowbite website.
+Get started with this starter project based on a Tailwind CSS, Vue 3 and Flowbite configuration to help you get started building website applications based on the utility classes from Tailwind CSS and components from Flowbite. 
+
+This repository is based on the [Tailwind CSS + Vue](https://flowbite.com/docs/getting-started/vue/) guide on the Flowbite website.
 
 ## Getting started
 
@@ -15,6 +17,12 @@ Run this command to compile and bundle the source code:
 
 ```
 npm run dev
+```
+
+Run this command to build the project:
+
+```
+npm run build
 ```
 
 You can use the [Flowbite](https://flowbite.com) components by importing them and initialising the objects using the `onMounted` method.
