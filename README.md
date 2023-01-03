@@ -32,7 +32,7 @@ Here's an example that is used for the modal component:
 ```
 <script setup>
 import { onMounted } from 'vue'
-import { Modal } from 'flowbite-ts-test'
+import { Modal } from 'flowbite'
 
 onMounted(() => {
     const $buttonElement = document.querySelector('#button');
