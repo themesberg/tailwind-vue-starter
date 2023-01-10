@@ -1,4 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
+import Events from "../views/Events.vue";
 import Accordion from "../views/Accordion.vue";
 import Carousel from "../views/Carousel.vue";
 import Collapse from "../views/Collapse.vue";
@@ -12,6 +13,11 @@ import Tooltip from "../views/Tooltip.vue";
 import Modal from "../views/Modal.vue";
 
 const routes = [
+  {
+    path: "/events",
+    name: "Events",
+    component: Events,
+  },
   {
     path: "/accordion",
     name: "Accordion",

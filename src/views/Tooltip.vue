@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Tooltip } from 'flowbite'
+import { Tooltip } from 'flowbite-ts-test'
 
 onMounted(() => {
    // set the tooltip content element

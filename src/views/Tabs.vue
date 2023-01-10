@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Tabs } from 'flowbite'
+import { Tabs } from 'flowbite-ts-test'
 
 onMounted(() => {
    // create an array of objects with the id, trigger element (eg. button), and the content element

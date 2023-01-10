@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Dismiss } from 'flowbite'
+import { Dismiss } from 'flowbite-ts-test'
 
 onMounted(() => {
    // target element that will be dismissed

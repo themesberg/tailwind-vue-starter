@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Dropdown } from 'flowbite'
+import { Dropdown } from 'flowbite-ts-test'
 
 onMounted(() => {
    // set the dropdown menu element

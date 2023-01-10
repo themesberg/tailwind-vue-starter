@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Collapse } from 'flowbite'
+import { Collapse } from 'flowbite-ts-test'
 
 onMounted(() => {
     // set the target element that will be collapsed or expanded (eg. navbar menu)
