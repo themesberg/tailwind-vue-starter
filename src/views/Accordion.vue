@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Accordion } from 'flowbite-ts-test'
+import { Accordion } from 'flowbite'
 
 onMounted(() => {
     // create an array of objects with the id, trigger element (eg. button), and the content element
