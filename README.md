@@ -27,12 +27,78 @@ npm run build
 
 You can use the [Flowbite](https://flowbite.com) components by importing them and initialising the objects using the `onMounted` method.
 
-Here's an example that is used for the modal component:
+### Data attributes
 
-```
+You can by default make the interactive components work by importing the "init" functions from the Flowbite package using the based on the onMounted lifecycle method from Vue 3.
+
+Here's an example how you can initialise the components based on data attributes with Vue 3:
+
+```javascript
 <script setup>
 import { onMounted } from 'vue'
-import { Modal } from 'flowbite-ts-test'
+import { initModals } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initModals();
+})
+</script>
+
+<template>
+    // Modal HTML markup with data attributes from Flowbite
+</template>
+```
+
+And here's the full list of available functions to use to initialise the components:
+
+```javascript
+<script setup>
+import { onMounted } from 'vue'
+import { 
+    initAccordions, 
+    initCarousels, 
+    initCollapses, 
+    initDials, 
+    initDismisses, 
+    initDrawers, 
+    initDropdowns, 
+    initDropdowns, 
+    initModals, 
+    initPopovers, 
+    initTabs, 
+    initTooltips } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initAccordions();
+    initCarousels();
+    initCollapses();
+    initDials();
+    initDismisses();
+    initDrawers();
+    initDropdowns();
+    initModals();
+    initPopovers();
+    initTabs();
+    initTooltips();
+})
+</script>
+```
+
+Even though this will make sure all of the interactive components will work with data attributes from Flowbite, we actually recommend only initialising the ones that you use for every page to optimize load speed.
+
+Check out the [starter guide's](https://github.com/themesberg/tailwind-vue-starter) `Events.vue` file to see it in action.
+
+### JavaScript API
+
+To start using the interactive components from Flowbite together with Vue 3 and Tailwind CSS you can import them inside your Vue files and initiate the object based on the onMounted method from Vue.
+
+Here's an example showing how you can use the Modal component:
+
+```javascript
+<script setup>
+import { onMounted } from 'vue'
+import { Modal } from 'flowbite'
 
 onMounted(() => {
     const $buttonElement = document.querySelector('#button');
@@ -53,7 +119,13 @@ onMounted(() => {
     }
 })
 </script>
+```
 
+As you can see we have imported the Modal component from the Flowbite package and we used the onMounted method to set up the event listeners to make sure that the templates have loaded and will work even with tools such as the Vue Router as you switch between the views.
+
+Here's the HTML markup that you need to add inside the `<template>` tag:
+
+```html
 <template>
   <div class="flex justify-center p-4">
         <button id="button" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Show modal</button>
@@ -93,6 +165,14 @@ onMounted(() => {
 ```
 
 You can find all of the examples inside the `views/` folder.
+
+You can also check out the available methods and options for the Flowbite API by scrolling down to the "JavaScript Behaviour" section on each page of this documentation where applicable.
+
+## Flowbite Vue Library
+
+We have started working on a dedicated [Flowbite Vue](https://github.com/themesberg/flowbite-vue) library which when it will be launched will be the recommeded way of using our components with Vue 3 because they are built specifically for usage within a Vue 3 environment. 
+
+Even though progress has been great, we still expect a couple of months until we can make a stable release. Contributions are more than welcome!
 
 ## License
 
