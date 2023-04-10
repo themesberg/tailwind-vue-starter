@@ -85,6 +85,20 @@ onMounted(() => {
 </script>
 ```
 
+Alternatively, you can also initialise all components using `initFlowbite`:
+
+```javascript
+<script setup>
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
+</script>
+```
+
 Even though this will make sure all of the interactive components will work with data attributes from Flowbite, we actually recommend only initialising the ones that you use for every page to optimize load speed.
 
 Check out the [starter guide's](https://github.com/themesberg/tailwind-vue-starter) `Events.vue` file to see it in action.

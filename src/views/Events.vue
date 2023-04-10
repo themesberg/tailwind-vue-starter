@@ -1,11 +1,9 @@
 <script setup>
 import { onMounted } from 'vue'
-import { initModals, initTooltips, initDrawers } from 'flowbite'
+import { initFlowbite } from 'flowbite'
 // initialize components based on data attribute selectors
 onMounted(() => {
-    initModals();
-    initTooltips();
-    initDrawers();
+    initFlowbite();
 
     // full list:
     // initAccordions();
