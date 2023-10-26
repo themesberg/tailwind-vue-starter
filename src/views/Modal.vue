@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Modal } from 'flowbite'
+import { Modal } from 'flowbite-2.0'
 
 onMounted(() => {
     const $buttonElement = document.querySelector('#button');

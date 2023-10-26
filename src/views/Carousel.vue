@@ -1,8 +1,10 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Carousel } from 'flowbite'
+import { Carousel } from 'flowbite-2.0'
 
 onMounted(() => {
+    const carouselElement = document.getElementById('carousel-example');
+
     const items = [
         {
             position: 0,
@@ -51,18 +53,18 @@ onMounted(() => {
         
         // callback functions
         onNext: () => {
-            console.log('next slider item is shown');
+            // console.log('next slider item is shown');
         },
         onPrev: ( ) => {
-            console.log('previous slider item is shown');
+            // console.log('previous slider item is shown');
         },
         onChange: ( ) => {
-            console.log('new slider item has been shown');
+            // console.log('new slider item has been shown');
         }
     };
 
     if (document.getElementById('carousel-item-1')) {
-        const carousel = new Carousel(items, options);
+        const carousel = new Carousel(carouselElement, items, options);
 
         carousel.cycle()
 
@@ -83,7 +85,7 @@ onMounted(() => {
 
 <template>
   <div class="max-w-2xl p-4 mx-auto">
-        <div class="relative">
+        <div id="carousel-example" class="relative">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
                  <!-- Item 1 -->

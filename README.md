@@ -36,7 +36,7 @@ Here's an example how you can initialise the components based on data attributes
 ```javascript
 <script setup>
 import { onMounted } from 'vue'
-import { initModals } from 'flowbite'
+import { initModals } from 'flowbite-2.0'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
@@ -66,7 +66,7 @@ import {
     initModals, 
     initPopovers, 
     initTabs, 
-    initTooltips } from 'flowbite'
+    initTooltips } from 'flowbite-2.0'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
@@ -90,7 +90,7 @@ Alternatively, you can also initialise all components using `initFlowbite`:
 ```javascript
 <script setup>
 import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite'
+import { initFlowbite } from 'flowbite-2.0'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
@@ -112,7 +112,7 @@ Here's an example showing how you can use the Modal component:
 ```javascript
 <script setup>
 import { onMounted } from 'vue'
-import { Modal } from 'flowbite'
+import { Modal } from 'flowbite-2.0'
 
 onMounted(() => {
     const $buttonElement = document.querySelector('#button');
