@@ -3,6 +3,7 @@ import { onMounted } from 'vue'
 import { Accordion } from 'flowbite'
 
 onMounted(() => {
+    const accordionItem = document.getElementById('accordion-example');
     // create an array of objects with the id, trigger element (eg. button), and the content element
     const accordionItems = [
         {
@@ -49,7 +50,7 @@ onMounted(() => {
         * accordionItems: array of accordion item objects
         * options: optional
         */
-        const accordion = new Accordion(accordionItems, options);
+        const accordion = new Accordion(accordionItem, accordionItems, options);
 
         // open accordion item based on id
         accordion.open('accordion-example-heading-2');
@@ -58,7 +59,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="max-w-2xl p-4 mx-auto">
+  <div id="accordion-example" class="max-w-2xl p-4 mx-auto">
         <h2 id="accordion-example-heading-1">
           <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" aria-expanded="true" aria-controls="accordion-example-body-1">
             <span>What is Flowbite?</span>

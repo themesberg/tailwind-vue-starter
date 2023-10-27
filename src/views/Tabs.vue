@@ -3,6 +3,8 @@ import { onMounted } from 'vue'
 import { Tabs } from 'flowbite'
 
 onMounted(() => {
+    const tabsElement = document.getElementById('tabs-example');
+
    // create an array of objects with the id, trigger element (eg. button), and the content element
     const tabElements = [
         {
@@ -42,7 +44,7 @@ onMounted(() => {
         * tabElements: array of tab objects
         * options: optional
         */
-        const tabs = new Tabs(tabElements, options);
+        const tabs = new Tabs(tabsElement, tabElements, options);
 
         // open tab item based on id
         tabs.show('contacts');
@@ -53,7 +55,7 @@ onMounted(() => {
 <template>
   <div class="max-w-2xl p-4 mx-auto">
         <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400" id="tabExample" role="tablist">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400" id="tabs-example" role="tablist">
                 <li class="mr-2" role="presentation">
                     <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="profile-tab-example" type="button" role="tab" aria-controls="profile-example" aria-selected="false">Profile</button>
                 </li>
