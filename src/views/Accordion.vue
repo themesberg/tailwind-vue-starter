@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Accordion } from 'flowbite-2.0'
+import { Accordion } from 'flowbite'
 
 onMounted(() => {
     const accordionItem = document.getElementById('accordion-example');

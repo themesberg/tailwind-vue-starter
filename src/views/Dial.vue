@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Dial } from 'flowbite-2.0'
+import { Dial } from 'flowbite'
 
 onMounted(() => {
     // parent element wrapping the speed dial

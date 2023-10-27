@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Tabs } from 'flowbite-2.0'
+import { Tabs } from 'flowbite'
 
 onMounted(() => {
     const tabsElement = document.getElementById('tabs-example');

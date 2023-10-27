@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Carousel } from 'flowbite-2.0'
+import { Carousel } from 'flowbite'
 
 onMounted(() => {
     const carouselElement = document.getElementById('carousel-example');

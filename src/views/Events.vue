@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite-2.0'
+import { initFlowbite } from 'flowbite'
 // initialize components based on data attribute selectors
 onMounted(() => {
     initFlowbite();

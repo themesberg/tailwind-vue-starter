@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import { Popover } from 'flowbite-2.0'
+import { Popover } from 'flowbite'
 
 onMounted(() => {
    // set the popover content element
