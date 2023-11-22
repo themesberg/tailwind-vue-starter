@@ -11,6 +11,7 @@ import Popover from "../views/Popover.vue";
 import Tabs from "../views/Tabs.vue";
 import Tooltip from "../views/Tooltip.vue";
 import Modal from "../views/Modal.vue";
+import InputCounter from "../views/InputCounter.vue";
 
 const routes = [
   {
@@ -72,6 +73,11 @@ const routes = [
     path: "/modal",
     name: "Modal",
     component: Modal,
+  },
+  {
+    path: "/input-counter",
+    name: "InputCounter",
+    component: InputCounter,
   },
 ];
 
