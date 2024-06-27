@@ -12,6 +12,7 @@ import Tabs from "../views/Tabs.vue";
 import Tooltip from "../views/Tooltip.vue";
 import Modal from "../views/Modal.vue";
 import InputCounter from "../views/InputCounter.vue";
+import Datepicker from "../views/Datepicker.vue";
 
 const routes = [
   {
@@ -78,6 +79,11 @@ const routes = [
     path: "/input-counter",
     name: "InputCounter",
     component: InputCounter,
+  },
+  {
+    path: "/datepicker",
+    name: "Datepicker",
+    component: Datepicker,
   },
 ];
 
