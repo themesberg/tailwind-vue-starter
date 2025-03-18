@@ -79,6 +79,11 @@ npm install flowbite --save
 @source "../node_modules/flowbite";
 ```
 
+## Flowbite Components
+
+Now that you have successfully installed Vue, Tailwind CSS and Flowbite you can start importing and using components from the open-source library of [Flowbite](https://flowbite.com) such as modals, navbars, tables, dropdowns, and more.
+
+
 4. Start a local development server by running the following command in your terminal:
 
 ```bash
